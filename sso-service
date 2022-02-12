@@ -1,15 +1,15 @@
 server:
     port: 9091
 spring:
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/optiya_sso
-    username: optiya
-    password: optiya
+   datasource:
+         driverClassName: com.mysql.jdbc.Driver
+         url: jdbc:mysql://localhost:3306/optiya_sso
+         username: optiya
+         password: optiya
   jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+         hibernate.ddl-auto: update
+         generate-ddl: true
+         show-sql: true
 
 eureka:
     client:
