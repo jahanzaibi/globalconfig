@@ -1,11 +1,12 @@
-server:
-    port: 9091
 spring:
     datasource:
-         driverClassName: com.mysql.jdbc.Driver
-         url: jdbc:mysql://localhost:3306/optiya_sso
-         username: optiya
-         password: optiya
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/optiya_sso
+        username: optiya
+        password: optiya
+server:
+    port: 9091
+
 eureka:
     client:
         serviceUrl:
