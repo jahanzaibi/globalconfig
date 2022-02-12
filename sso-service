@@ -11,6 +11,7 @@ spring:
         hibernate.cache.use_second_level_cache: false
         hibernate.cache.use_structured_entries: false
         hibernate.cache.use_minimal_puts: false
+        hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
     datasource:
         url: jdbc:mysql://localhost:3306/optiya_sso
         username: optiya
