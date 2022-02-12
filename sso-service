@@ -1,0 +1,10 @@
+server:
+    port: 9091
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9761/eureka/
+    instance:
+        leaseRenewalIntervalInSeconds: 1
+        leaseExpirationDurationInSeconds: 2
+        preferIpAddress: true
