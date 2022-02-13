@@ -4,6 +4,10 @@ spring:
         url: jdbc:mysql://localhost:3306/optiya_sso
         username: optiya
         password: optiya
+    jpa:
+        show-sql: true
+        hibernate:
+              ddl-auto: update
 server:
     port: 9091
   
