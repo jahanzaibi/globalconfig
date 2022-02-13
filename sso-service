@@ -1,17 +1,20 @@
 spring:
     datasource:
-        driverClassName: com.mysql.cj.jdbc.Driver
+        driverClassName: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/optiya_sso
         username: optiya
         password: optiya
 server:
     port: 9091
-
+  
 eureka:
-    client:
-        serviceUrl:
-        daultZone: http://localhost:9761/eureka/
     instance:
+        hostname: localhost
         leaseRenewalIntervalInSeconds: 1
         leaseExpirationDurationInSeconds: 2
-        preferIpAddress: true
+
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        serviceUrl:
+            defaultZone: ${EUREKA_URL:http://localhost:9761/eureka/}
