@@ -34,3 +34,9 @@ eureka:
         fetch-registry: true
         serviceUrl:
             defaultZone: ${EUREKA_URL:http://localhost:9761/eureka/}
+            
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
