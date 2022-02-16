@@ -1,6 +1,6 @@
 spring:
     datasource:
-        driverClassName: com.mysql.jdbc.Driver
+        driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/optiya_sso
         username: optiya
         password: optiya
@@ -11,15 +11,15 @@ spring:
                  persistence:
                       sharedCache: 
                            mode: ENABLE_SELECTIVE
-   
-        hibernate:
-              ddl-auto: update
-              generate_statistics: true
-              cache:
-                  use_second_level_cache: true
-                  use_query_cache: true 
-                  region:
-                       factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
+              
+              hibernate:
+                   ddl-auto: update
+                   generate_statistics: true
+                   cache:
+                      use_second_level_cache: true
+                      use_query_cache: true 
+                      region:
+                           factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
 server:
     port: 9091
   
