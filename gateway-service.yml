@@ -1,15 +1,12 @@
 server:
     port: 9999
-cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: sso-service
-          uri: lb://sso-service
-          predicates:
-          - Path=/sso/**
+spring:
+    cloud:
+        gateway:
+          discovery:
+               locator:
+                    enabled: true
+
 eureka:
     instance:
         hostname: localhost
