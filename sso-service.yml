@@ -7,19 +7,19 @@ spring:
     jpa:
         show-sql: true
         properties:
-              javax:
-                 persistence:
-                      sharedCache: 
-                           mode: ENABLE_SELECTIVE
+              #javax:
+              #   persistence:
+              #        sharedCache: 
+              #             mode: ENABLE_SELECTIVE
               
               hibernate:
                    ddl-auto: update
                    generate_statistics: true
-                   cache:
-                      use_second_level_cache: true
-                      use_query_cache: true 
-                      region:
-                           factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
+                  # cache:
+                  #    use_second_level_cache: true
+                  #    use_query_cache: true 
+                  #    region:
+                  #         factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
 server:
     port: 9091
   
