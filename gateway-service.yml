@@ -12,6 +12,10 @@ spring:
         uri: http://httpbin.org:80
         predicates:
         - Path=/get
+      - id: pet
+        uri: http://localhost:9091/**
+        predicates:
+        - Path=/pet
       
 eureka:
     instance:
