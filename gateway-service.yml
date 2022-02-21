@@ -13,7 +13,7 @@ spring:
         predicates:
         - Path=/get
       - id: pet
-        uri: http://localhost:9091/users/find/1
+        uri: lb://SSO-SERVICE/users/find/1
         predicates:
         - Path=/pet
       
