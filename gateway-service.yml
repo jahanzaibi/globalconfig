@@ -8,14 +8,12 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: get
-        uri: http://httpbin.org:80
-        predicates:
-        - Path=/get
-      - id: pet
-        uri: http://localhost:9091/actuator/health
-        predicates:
-        - Path=/pet
+        - id: sso-service
+          uri: lb://SSO-SERVICE
+          predicates:
+            - Path=/sso/**
+          filters:
+            - StripPrefix=1
         
 management:
   endpoints:
