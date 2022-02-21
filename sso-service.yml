@@ -23,6 +23,12 @@ spring:
 server:
     port: 9091
   
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  
 eureka:
     instance:
         hostname: localhost
