@@ -16,6 +16,12 @@ spring:
         uri: lb://SSO-SERVICE/users/find/1
         predicates:
         - Path=/pet
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
       
 eureka:
     instance:
