@@ -13,7 +13,7 @@ spring:
         predicates:
         - Path=/get
       - id: pet
-        uri: http://localhost:9761/
+        uri: http://172.0.0.1:9761/
         predicates:
         - Path=/pet
         
