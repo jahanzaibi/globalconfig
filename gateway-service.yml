@@ -20,7 +20,11 @@ management:
     web:
       exposure:
         include: "*"
-      
+
+jwt:
+    secret: Jahan
+    jwtExpirationInSec: 10000
+    
 eureka:
     instance:
         hostname: localhost
