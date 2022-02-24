@@ -7,8 +7,6 @@ spring:
       discovery:
         locator:
           enabled: true
-      default-filters:
-        - name: GlobalHeaderTokenUpdateFilter
         
       routes:
         - id: sso-service
@@ -24,10 +22,7 @@ management:
       exposure:
         include: "*"
 
-jwt:
-    secret: Jahan
-    jwtExpirationInSec: 10000
-    
+   
 eureka:
     instance:
         hostname: localhost
