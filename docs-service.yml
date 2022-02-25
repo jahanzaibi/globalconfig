@@ -1,6 +1,9 @@
 server:
   port: 9089
   
+springdoc:
+  packagesToScan: com.optiya
+  
 eureka:
   instance:
       hostname: localhost
