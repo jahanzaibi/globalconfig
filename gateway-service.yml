@@ -15,6 +15,12 @@ spring:
             - Path=/sso/**
           filters:
             - StripPrefix=1
+        - id: docs-service
+          uri: lb://DOCS-SERVICE
+          predicates:
+            - Path=/docs/**
+          filters:
+            - StripPrefix=1
         
 management:
   endpoints:
