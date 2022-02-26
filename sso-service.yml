@@ -6,6 +6,9 @@ spring:
         password: optiya
     jpa:
         show-sql: true
+        hibernate:
+               ddl-auto: update
+               generate_statistics: true
         properties:
               javax:
                  persistence:
@@ -13,9 +16,7 @@ spring:
                            mode: ENABLE_SELECTIVE
               
               hibernate:
-                   ddl-auto: update
-                   generate_statistics: true
-                   cache:
+                    cache:
                       use_second_level_cache: true
                       use_query_cache: true 
                       region:
