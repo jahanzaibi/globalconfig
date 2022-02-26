@@ -49,6 +49,12 @@ openapi:
     title: Optiya
     version: 1.0
     description: Optiya SSO Api Documentation
+    
+springdoc:
+    swagger-ui:
+        enabled: false
+    api-docs:
+        path: /api
             
 logging:
   level:
