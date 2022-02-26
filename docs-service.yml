@@ -1,13 +1,5 @@
 server:
   port: 9089
-  
-springdoc:
-  packagesToScan: com.optiya
-
-openapi:
-    title: Optiya
-    version: 1.0
-    description: Optiya Api Documentation
 
 eureka:
   instance:
