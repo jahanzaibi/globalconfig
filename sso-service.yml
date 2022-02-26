@@ -45,6 +45,11 @@ eureka:
         serviceUrl:
             defaultZone: ${EUREKA_URL:http://localhost:9761/eureka/}
             
+openapi:
+    title: Optiya
+    version: 1.0
+    description: Optiya SSO Api Documentation
+            
 logging:
   level:
     org:
