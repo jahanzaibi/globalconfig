@@ -34,15 +34,7 @@ management:
 jwt:
     secret: Jahan
     jwtExpirationInSec: 10000
-    
-eureka:
-    instance:
-        leaseRenewalIntervalInSeconds: 1
-        leaseExpirationDurationInSeconds: 2
 
-    client:
-        register-with-eureka: true
-        fetch-registry: true
      
             
 openapi:
