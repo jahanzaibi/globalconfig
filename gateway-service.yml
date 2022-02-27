@@ -7,7 +7,6 @@ spring:
       discovery:
         locator:
           enabled: true
-        
       routes:
         - id: sso-service
           uri: lb://SSO-SERVICE
@@ -29,14 +28,4 @@ management:
         include: "*"
 
    
-eureka:
-    instance:
-        hostname: localhost
-        leaseRenewalIntervalInSeconds: 1
-        leaseExpirationDurationInSeconds: 2
 
-    client:
-        register-with-eureka: true
-        fetch-registry: true
-        serviceUrl:
-            defaultZone: ${EUREKA_URL:http://localhost:9761/eureka/}
