@@ -37,15 +37,13 @@ jwt:
     
 eureka:
     instance:
-        hostname: localhost
         leaseRenewalIntervalInSeconds: 1
         leaseExpirationDurationInSeconds: 2
 
     client:
         register-with-eureka: true
         fetch-registry: true
-        serviceUrl:
-            defaultZone: ${EUREKA_URL:http://localhost:9761/eureka/}
+     
             
 openapi:
     title: Optiya
