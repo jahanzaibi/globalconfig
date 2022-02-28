@@ -2,8 +2,8 @@ spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://optiyadb:9906/optiya_sso
-        username: optiya
-        password: optiya
+        username: root
+        password: Optiya5576
     jpa:
         show-sql: true
         hibernate:
