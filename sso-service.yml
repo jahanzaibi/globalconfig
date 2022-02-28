@@ -1,7 +1,7 @@
 spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://optiyadb:9906/optiya_sso?autoReconnect=true&useSSL=false
+        url: jdbc:mysql://optiyadb:9906/optiya_sso?enabledTLSProtocols=TLSv1.2
         username: root
         password: Optiya5576
     jpa:
