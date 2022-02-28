@@ -4,9 +4,9 @@ spring:
         url: jdbc:mysql://optiyadb:9906/optiya_sso?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
         username: root
         password: Optiya5576
+        plateform: mysql
     jpa:
         show-sql: true
-        database-platform: org.hibernate.dialect.MySQL8InnoDBDialect
         hibernate:
                ddl-auto: update
                
