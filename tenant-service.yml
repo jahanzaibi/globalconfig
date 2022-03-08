@@ -1,7 +1,7 @@
 spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:9906/optiya_tenant?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
+        url: jdbc:mysql://optiyadb:9906/optiya_tenant?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
         username: root
         password: Optiya5576
     jpa:
