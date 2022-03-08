@@ -14,6 +14,12 @@ spring:
             - Path=/sso/**
           filters:
             - StripPrefix=1
+        - id: tenant-service
+          uri: lb://TENANT-SERVICE
+          predicates:
+            - Path=/tenant/**
+          filters:
+            - StripPrefix=1
         - id: docs-service
           uri: lb://DOCS-SERVICE
           predicates:
