@@ -24,7 +24,7 @@ spring:
                       region:
                            factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
 server:
-    port: 9091
+    port: 9096
   
 management:
   endpoints:
