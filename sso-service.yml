@@ -34,7 +34,7 @@ management:
 
 jwt:
     secret: Jahan
-    jwtExpirationInSec: 10000
+    jwtExpirationInMin: 10000
 
      
             
