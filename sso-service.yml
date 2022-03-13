@@ -1,4 +1,6 @@
 spring:
+    kafka:
+        bootstrap-servers: localhost:9093
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://optiyadb:3306/optiya_sso?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
