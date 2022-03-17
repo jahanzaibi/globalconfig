@@ -1,8 +1,9 @@
 spring:
     kafka:
-        bootstrap-servers: localhost:9093 
-        key-serializer: org.apache.kafka.common.serialization.StringSerializer
-        value-serializer: org.apache.kafka.common.serialization.StringSerializer
+        producer:
+               bootstrap-servers: localhost:9093
+               key-serializer: org.apache.kafka.common.serialization.StringSerializer
+               value-serializer: org.apache.kafka.common.serialization.StringSerializer
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://optiyadb:3306/optiya_sso?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
