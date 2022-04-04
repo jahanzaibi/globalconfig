@@ -20,6 +20,12 @@ spring:
             - Path=/tenant/**
           filters:
             - StripPrefix=1
+        - id: lane-service
+          uri: lb://LANE-SERVICE
+          predicates:
+            - Path=/lane/**
+          filters:
+            - StripPrefix=1
         - id: docs-service
           uri: lb://DOCS-SERVICE
           predicates:
