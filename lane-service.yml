@@ -4,6 +4,10 @@ spring:
                bootstrap-servers: localhost:9093
                key-serializer: org.apache.kafka.common.serialization.StringSerializer
                value-serializer: org.apache.kafka.common.serialization.StringSerializer
+       producer:
+               bootstrap-servers: dev.optiya.com:9093
+               key-serializer: org.apache.kafka.common.serialization.StringSerializer
+               value-serializer: org.springframework.kafka.support.serializer.JsonSerializer  
                
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
