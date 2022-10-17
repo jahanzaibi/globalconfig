@@ -1,11 +1,11 @@
 spring:
     kafka:
         consumer:
-               bootstrap-servers: localhost:9093
+               bootstrap-servers: localhost:9092
                key-serializer: org.apache.kafka.common.serialization.StringSerializer
                value-serializer: org.apache.kafka.common.serialization.StringSerializer
        producer:
-               bootstrap-servers: dev.optiya.com:9093
+               bootstrap-servers: dev.optiya.com:9092
                key-serializer: org.apache.kafka.common.serialization.StringSerializer
                value-serializer: org.springframework.kafka.support.serializer.JsonSerializer  
                
