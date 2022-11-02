@@ -22,7 +22,7 @@ spring:
                            mode: ENABLE_SELECTIVE
               
               hibernate:
-                    generate_statistics: true
+                    generate_statistics: false
                     cache:
                       use_second_level_cache: true
                       use_query_cache: true 
