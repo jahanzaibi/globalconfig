@@ -53,7 +53,7 @@ jwt:
 openapi:
     title: Optiya
     version: 1.0
-    description: Optiya Tenent Api Documentation
+    description: Optiya Lane Api Documentation
     
 springdoc:
     swagger-ui:
