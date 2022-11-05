@@ -39,6 +39,11 @@ server:
 optiya:
     dbsync:
         topic: optiya.public.dbsync
+    agent:
+        sync:
+           topic: optiya.public.agentsync
+    infracompany:
+        reponse: optiya.public.infra.response
   
 management:
   endpoints:
