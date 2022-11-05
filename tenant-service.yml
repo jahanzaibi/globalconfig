@@ -34,7 +34,7 @@ server:
     
 optiya:
     dbsync:
-        topic: optiya.public.dbsync
+        topic: DATABASE-SYNC-SERVICE
   
 management:
   endpoints:
