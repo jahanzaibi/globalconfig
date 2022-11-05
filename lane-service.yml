@@ -38,12 +38,12 @@ server:
     
 optiya:
     dbsync:
-        topic: optiya.public.dbsync
+        topic: DATABASE-SYNC-SERVICE
     agent:
         sync:
-           topic: optiya.public.agentsync
+           topic: AGENT-SYNC-SERVICE
     infracompany:
-        reponse: optiya.public.infra.response
+        reponse: INFRA-RESPONSE-COMPANY
   
 management:
   endpoints:
