@@ -42,7 +42,7 @@ optiya:
     agent:
         sync:
            topic: AGENT-SYNC-SERVICE
-    infracompany:
+    infra:
         response: INFRA-RESPONSE-COMPANY
   
 management:
