@@ -43,7 +43,7 @@ optiya:
         sync:
            topic: AGENT-SYNC-SERVICE
     infracompany:
-        response: INFRA-RESPONSE-COMPANY
+           response: INFRA-RESPONSE-COMPANY
   
 management:
   endpoints:
