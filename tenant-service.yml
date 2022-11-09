@@ -35,6 +35,11 @@ server:
 optiya:
     dbsync:
         topic: DATABASE-SYNC-SERVICE
+    agent:
+        sync:
+           topic: AGENT-SYNC-SERVICE
+    infra:
+        response: INFRA-RESPONSE-COMPANY
   
 management:
   endpoints:
