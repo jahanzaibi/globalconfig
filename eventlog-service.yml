@@ -34,7 +34,7 @@ spring:
                       region:
                            factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
 server:
-    port: 9098
+    port: 9099
     
 optiya:
     event:
