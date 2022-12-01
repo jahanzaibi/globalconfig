@@ -32,6 +32,12 @@ spring:
             - Path=/docs/**
           filters:
             - StripPrefix=1
+        - id: eventlog-service
+          uri: lb://EVENTLOG-SERVICE
+          predicates:
+            - Path=/eventlogs/**
+          filters:
+            - StripPrefix=1     
         
 management:
   endpoints:
