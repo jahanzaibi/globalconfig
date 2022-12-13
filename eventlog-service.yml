@@ -39,6 +39,8 @@ server:
 optiya:
     event:
         topic: EVENT-LOG-SERVICE
+    dbsync:
+        topic: DATABASE-SYNC-SERVICE
         
 management:
   endpoints:
