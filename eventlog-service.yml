@@ -33,6 +33,18 @@ spring:
                       use_query_cache: true 
                       region:
                            factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: usmanmuradjamali@gmail.com
+        password: vxhhscqdadhegzma
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true            
+      
 server:
     port: 9099
     
