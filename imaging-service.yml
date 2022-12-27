@@ -1,14 +1,4 @@
 spring:
-    kafka:
-       consumer:
-               bootstrap-servers: dev.optiya.com:9092
-               key-serializer: org.apache.kafka.common.serialization.StringSerializer
-               value-serializer: org.apache.kafka.common.serialization.StringSerializer
-       producer:
-               bootstrap-servers: dev.optiya.com:9092
-               key-serializer: org.apache.kafka.common.serialization.StringSerializer
-               value-serializer: org.apache.kafka.common.serialization.StringSerializer  
-               
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://optiyadb:3306/optiya_imageing?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
@@ -39,6 +29,8 @@ server:
     port: 9050
     
 optiya:
+    bootstrapAddress: dev.optiya.com:9092
+    bootstrapSchemaAddress: http://dev.optiya.com:8081
     image:
         topic: EVENTLOG-IMAGE-SERVICE
     event:
