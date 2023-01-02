@@ -44,6 +44,12 @@ spring:
             - Path=/images/**
           filters:
             - StripPrefix=1 
+        - id: reporting-service
+          uri: lb://REPORTING-SERVICE
+          predicates:
+            - Path=/reports/**
+          filters:
+            - StripPrefix=1
         
 management:
   endpoints:
