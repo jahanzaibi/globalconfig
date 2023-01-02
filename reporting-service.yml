@@ -1,1 +1,57 @@
+spring:
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://optiyadb:3306/optiya_eventlog?createDatabaseIfNotExist=false&allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
+        username: root
+        password: Optiya5576
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.MySQL57Dialect
+        hibernate:
+               ddl-auto: update
+               
+        properties:
+              javax:
+                 persistence:
+                      sharedCache: 
+                           mode: ENABLE_SELECTIVE
+              
+              hibernate:
+                    generate_statistics: false
+                    cache:
+                      use_second_level_cache: true
+                      use_query_cache: true 
+                      region:
+                           factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory 
+             
+      
+server:
+    port: 9055
+   
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+jwt:
+    secret: Jahan
+   
+            
+openapi:
+    title: Optiya
+    version: 1.0
+    description: Optiya Reporting Api Documentation
+    
+springdoc:
+    swagger-ui:
+        enabled: false
+    api-docs:
+        path: /api
+            
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
