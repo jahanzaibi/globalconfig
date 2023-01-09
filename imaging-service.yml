@@ -31,7 +31,7 @@ server:
 optiya:
     bootstrapAddress: dev.optiya.com:9092
     bootstrapSchemaAddress: http://dev.optiya.com:8081
-    imageServer: http://dev.optiya.com:3030
+    imageServer: https://dev.optiya.com:3030
     imageDirectoryLocation: /opt/optiya/images
     image:
         topic: EVENTLOG-IMAGE-SERVICE
