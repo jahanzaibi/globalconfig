@@ -49,6 +49,8 @@ server:
     port: 9099
     
 optiya:
+    kafka:
+        server: dev.optiya.com:9092
     event:
         topic: EVENT-LOG-SERVICE
     dbsync:
