@@ -50,7 +50,8 @@ server:
     
 optiya:
     kafka:
-        server: dev.optiya.com:9092
+        messageServer: dev.optiya.com:9092
+        messageSchemaServer: http://dev.optiya.com:8081
     event:
         topic: EVENT-LOG-SERVICE
     dbsync:
