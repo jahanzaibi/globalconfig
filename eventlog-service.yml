@@ -48,6 +48,13 @@ optiya:
         topic: EVENT-LOG-SERVICE
     dbsync:
         topic: DATABASE-SYNC-SERVICE
+    anpr:
+        request:
+            topic: ANPR-REQUEST-SERVICE
+        response:
+            topic: ANPR-RESPONSE-LANE-0
+        engine: ULTIMATEALPR
+        timeout: 3000
         
 management:
   endpoints:
