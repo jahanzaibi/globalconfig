@@ -38,12 +38,6 @@ spring:
             - Path=/eventlogs/**
           filters:
             - StripPrefix=1 
-        - id: imaging-service
-          uri: lb://IMAGING-SERVICE
-          predicates:
-            - Path=/images/**
-          filters:
-            - StripPrefix=1 
         - id: reporting-service
           uri: lb://REPORTING-SERVICE
           predicates:
