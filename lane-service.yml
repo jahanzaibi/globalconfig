@@ -1,13 +1,4 @@
 spring:
-    kafka:
-       consumer:
-               bootstrap-servers: dev.optiya.com:9092
-               key-serializer: org.apache.kafka.common.serialization.StringSerializer
-               value-serializer: org.apache.kafka.common.serialization.StringSerializer
-       producer:
-               bootstrap-servers: dev.optiya.com:9092
-               key-serializer: org.apache.kafka.common.serialization.StringSerializer
-               value-serializer: org.apache.kafka.common.serialization.StringSerializer  
                
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
@@ -37,6 +28,8 @@ server:
     port: 9098
     
 optiya:
+    kafka:
+       server: dev.optiya.com:9092
     dbsync:
         topic: DATABASE-SYNC-SERVICE
     agent:
