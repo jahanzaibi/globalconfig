@@ -46,6 +46,8 @@ optiya:
         messageSchemaServer: http://dev.optiya.com:8081
     event:
         topic: EVENT-LOG-SERVICE
+    state:
+        topic: LANE-STATE-SERVICE
     dbsync:
         topic: DATABASE-SYNC-SERVICE
     anpr:
