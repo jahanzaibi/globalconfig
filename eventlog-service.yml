@@ -39,7 +39,7 @@ server:
     port: 9099
     
 optiya:
-    imageServer: http://app.optiya.com:9090/eventlog/v1/images
+    imageServer: http://app.optiya.com:9090/eventlogs/v1/images
     imageDirectoryLocation: /opt/optiya/images
     kafka:
         messageServer: dev.optiya.com:9092
