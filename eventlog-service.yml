@@ -39,7 +39,7 @@ server:
     port: 9099
     
 optiya:
-    imageServer: https://dev.optiya.com:3030
+    imageServer: http://dev.optiya.com:3030
     imageDirectoryLocation: /opt/optiya/images
     kafka:
         messageServer: dev.optiya.com:9092
